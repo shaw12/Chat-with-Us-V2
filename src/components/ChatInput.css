@@ -1,0 +1,51 @@
+
+.chatInput{
+    border-radius: 20px;
+}
+.chatInput > form {
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    width: 80%;
+}
+
+.chatInput__wrapper {
+    width: 100%;
+    object-fit: contain !important;
+}
+
+.chatInput__wrapper > input {
+    margin: 0px 20px;
+    padding: 15px;
+    width: 95%;
+  /* transform: translate(40%, 0%); */
+}
+
+.chatInput > form > button {
+    background-color: transparent;
+    border: transparent;
+    position: fixed;
+    right: 45px;
+}
+@media (max-width: 768px){
+    .chatInput__wrapper > input{
+        width: 85%;
+    }
+    .chatInput > form > button{
+        right: 16px;
+    }
+}
+@media (max-width: 480px){
+    .chatInput__wrapper > input{
+        margin: 0 5px;
+        margin-left: 11px;
+        width: 57%;
+        padding-right: 30px;
+    }
+    .chatInput > form > button{
+        right: 5px;
+    }
+}
